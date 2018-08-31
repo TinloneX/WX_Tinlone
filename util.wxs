@@ -1,0 +1,15 @@
+function clog(a, b, c, d) {
+  console.log(check_null(a), check_null(b), check_null(c), check_null(d));
+}
+
+function check_null(x) {
+  if (x === undefined) {
+    return '';
+  } else {
+    return x;
+  }
+}
+
+module.exports = {
+  clog: clog
+}
