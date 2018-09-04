@@ -1,0 +1,15 @@
+<!--pages/swipper/swipper.wxml-->
+<swiper width='100%' indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' >
+  <block wx:for="{{imgUrls}}" wx:key="property">
+  <swiper-item  style="background:url({{item}});background-repeat: no-repeat;background-size:100%;"/>
+  <!-- 下面方法会有空白区域 -->
+    <!-- <swiper-item width='100%'>
+      <image src='{{item}}' class='slide-image' width='100%'    mode='scaleToFill'></image>
+    </swiper-item> -->
+  </block>
+</swiper>
+
+<button bindtap='changeDots'>change dots</button>
+<button bindtap='changeAutoPlay'>change AutoPlay</button>
+<slider bindchange='intervalChange' value='1250' show-value min='500' max='2000' />interval
+<slider bindchange='durationChange' value='5000' show-value min='1000' max='10000' />duration
