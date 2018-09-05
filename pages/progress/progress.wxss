@@ -1,0 +1,7 @@
+/* pages/progress/progress.wxss */
+.prog{
+  width: 80%;
+  height:50px;
+  margin-left: 15px;
+  margin-top: 15px; 
+}

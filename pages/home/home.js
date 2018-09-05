@@ -19,6 +19,27 @@ Page({
       },{
         title:"movable-area",
         router:"../movable/movable",
+      }, {
+        title: "cover-view",
+        router: "../coverview/coverview",
+      }, {
+        title: "icon",
+        router: "../icon/icon",
+      }, {
+        title: "text",
+        router: "../text/text",
+      }, {
+        title: "progress",
+        router: "../progress/progress",
+      }, {
+        title: "button",
+        router: "../button/button",
+      }, {
+        title: "checkbox",
+        router: "../checkbox/checkbox",
+      }, {
+        title: "form",
+        router: "../form/form",
       }
     ]
   },

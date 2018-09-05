@@ -6,7 +6,14 @@
     "pages/view/view",
     "pages/scrollview/scrollview",
     "pages/swipper/swipper",
-    "pages/movable/movable"
+    "pages/movable/movable",
+    "pages/coverview/coverview",
+    "pages/icon/icon",
+    "pages/text/text",
+    "pages/progress/progress",
+    "pages/button/button",
+    "pages/checkbox/checkbox",
+    "pages/form/form"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,10 @@
+<!--pages/progress/progress.wxml-->
+<progress class='prog' percent='20' show-info/>
+
+<progress class='prog' percent='40' stroke-width='12' activeColor='blue' backgroundColor='gray' />
+
+<progress class='prog' percent='60' color='pink' />
+
+<progress class='prog' percent='80' active/>
+
+<progress class='prog' percent='50' active-mode='backwards' show-info active />

@@ -1,29 +1,40 @@
-// pages/movable/movable.js
+// pages/checkbox/checkbox.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    x: 0,
-    y: 0
+    items: [{
+        name: 'USA',
+        value: '美国'
+      },
+      {
+        name: 'CHN',
+        value: '中国',
+        checked: 'true'
+      },
+      {
+        name: 'BRA',
+        value: '巴西'
+      },
+      {
+        name: 'JPN',
+        value: '日本'
+      },
+      {
+        name: 'ENG',
+        value: '英国'
+      },
+      {
+        name: 'TUR',
+        value: '法国'
+      },
+    ]
   },
-
-  move: function() {
-    this.setData({
-      x: 30,
-      y: 30
-    })
+  checkboxChange: function(e) {
+    console.log('checkbox发生change事件，携带value值为：', e.detail.value)
   },
-
-  onchange: function(e) {
-    console.log(e.detail)
-  },
-
-  onScale: function(e) {
-    console.log(e.detail)
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */

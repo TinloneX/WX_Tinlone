@@ -1,29 +1,30 @@
-// pages/movable/movable.js
+// pages/text/text.js
+var initData = 'this is first line\nthis is second line'
+var extraLine = []
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    x: 0,
-    y: 0
+    text: initData
   },
 
-  move: function() {
+  add: function(e) {
+    extraLine.push('other line')
     this.setData({
-      x: 30,
-      y: 30
+      text: initData + '\n' + extraLine.join('\n')
     })
   },
 
-  onchange: function(e) {
-    console.log(e.detail)
+  remove: function(e) {
+    if (extraLine.length > 0) {
+      extraLine.pop()
+      this.setData({
+        text: initData + '\n' + extraLine.join('\n')
+      })
+    }
   },
-
-  onScale: function(e) {
-    console.log(e.detail)
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */

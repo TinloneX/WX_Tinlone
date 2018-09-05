@@ -1,0 +1,12 @@
+/* pages/text/text.wxss */
+.btn-area {
+  width: 80%;
+  height: 30px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.body-view{
+  width: 100%;
+  line-height: 20px;
+  text-align: center;
+}

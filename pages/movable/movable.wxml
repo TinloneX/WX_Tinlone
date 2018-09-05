@@ -1,2 +1,23 @@
 <!--pages/movable/movable.wxml-->
-<text>pages/movable/movable.wxml</text>
+<view class='section'>
+  <view class='section__title'>movable-view区域小于movable-area</view>
+  <!-- 此时view可在area内被拖动和定位 -->
+  <movable-area style="height:200px; width:200px;background:red;">
+    <movable-view style='height:50px; width:50px;background:blue;' x='{{x}}' y='{{y}}' direction='all'></movable-view>
+  </movable-area>
+  <view class='btn-area'>
+    <button size='mini' bindtap='move'>点击移动到（30，30）</button>
+  </view>
+
+  <view class='section__title' style='margin-top:100px'>movable-view区域大于movable-area</view>
+  <!-- 此时view会以area的上下作为移动的最大Y和最小Y -->
+  <movable-area style='height:100px;width:100px;background:red'>
+    <movable-view style='height:200px;width:200px;background:blue' direction='all'>
+    </movable-view>
+  </movable-area>
+
+  <view class='section__title' style='margin-top:100px'>可缩放</view>
+  <movable-area style='height:200px; width:200px;background:red;' scale-area>
+    <movable-view style='height:50px;width:50px;background:blue' direction='all' bindchange='onchange' bindscale='onScale' scale scale-min='0.5' scale-max='4' scale-value='2'></movable-view>
+  </movable-area>
+</view>
