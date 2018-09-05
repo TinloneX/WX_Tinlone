@@ -40,6 +40,9 @@ Page({
       }, {
         title: "form",
         router: "../form/form",
+      }, {
+        title: "rich-text",
+        router: "../richtext/richtext",
       }
     ]
   },

@@ -13,7 +13,8 @@
     "pages/progress/progress",
     "pages/button/button",
     "pages/checkbox/checkbox",
-    "pages/form/form"
+    "pages/form/form",
+    "pages/richtext/richtext"
   ],
   "window":{
     "backgroundTextStyle":"light",

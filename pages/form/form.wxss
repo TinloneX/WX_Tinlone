@@ -1,1 +1,19 @@
 /* pages/form/form.wxss */
+
+.info {
+  width: 80%;
+  display: flex;
+  margin-right: 15px;
+  margin-left: 15px;
+  background: wheat;
+  line-height: 20px;
+  text-align: center;
+  color: blue;
+  align-content: center
+}
+
+.btn-area {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
