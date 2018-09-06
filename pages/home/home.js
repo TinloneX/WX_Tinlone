@@ -43,6 +43,18 @@ Page({
       }, {
         title: "rich-text",
         router: "../richtext/richtext",
+      }, {
+        title: "input",
+        router: "../input/input",
+      }, {
+        title: "label",
+        router: "../label/label",
+      }, {
+        title: "picker",
+        router: "../picker/picker",
+      }, {
+        title: "picker-view",
+        router: "../pickerview/pickerview",
       }
     ]
   },

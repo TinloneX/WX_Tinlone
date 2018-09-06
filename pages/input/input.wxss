@@ -1,0 +1,6 @@
+/* pages/input/input.wxss */
+
+.input_base {
+  margin-left: 15px;
+  margin-top: 5px;
+}

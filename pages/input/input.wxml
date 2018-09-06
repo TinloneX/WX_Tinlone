@@ -1,0 +1,21 @@
+<!--pages/input/input.wxml-->
+<view class='section section_gap'>
+  <input class='input_base' type='text' password='false' placeholder='自动聚焦' maxlength='16' facus='true' auto-focus />
+  <view class='section'>
+    <input placeholder='我的焦点被按键控制' fucus='{{facus}}' />
+    <button bindtap='changeFacus'>改变焦点</button>
+  </view>
+  <view class='section'>
+    <view class='section__title' style='height:30px;'>{{inputValue}}</view>
+    <input bindinput='bindKeyInput' placeholder='实时展示' />
+  </view>
+  <view class='section'>
+    <input bindinput='bindReplaceInput' placeholder='连续的两个1会变成2' />
+  </view>
+  <input class='input_base' password type='number' placeholder='数字密码' />
+  <input class='input_base' password type='text' placeholder='文本密码' />
+  <input class='input_base' type='digit' placeholder='带小数点数字键盘' />
+  <input class='input_base' type='idcard' placeholder='身份证输入' />
+
+
+</view>

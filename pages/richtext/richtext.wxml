@@ -1,3 +1,7 @@
 <!--pages/richtext/richtext.wxml-->
-
-
+<view class='section section_gap'>
+  <view class='rich_wrp'>
+    <rich-text nodes='{{nodes}}' />
+    <rich-text nodes='{{html}}' />
+  </view>
+</view>

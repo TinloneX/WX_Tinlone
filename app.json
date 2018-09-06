@@ -14,7 +14,11 @@
     "pages/button/button",
     "pages/checkbox/checkbox",
     "pages/form/form",
-    "pages/richtext/richtext"
+    "pages/richtext/richtext",
+    "pages/input/input",
+    "pages/label/label",
+    "pages/picker/picker",
+    "pages/pickerview/pickerview"
   ],
   "window":{
     "backgroundTextStyle":"light",
