@@ -1,0 +1,7 @@
+/* pages/slider/slider.wxss */
+
+.body-view {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
